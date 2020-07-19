@@ -68,7 +68,8 @@ public class CareerPromotion {
 	  @Then("^Item is added$") 
 	  public void item_added_() throws Throwable {
 	  WebElement element=driver.findElement(By.xpath("//div[contains(text(),'Item added')]"));
-	  String text=element.getText(); System.out.println(text); Thread.sleep(5000);
+	  String text=element.getText(); System.out.println(text);
+	  Thread.sleep(5000);
 	 
 	  }
 	 
@@ -81,7 +82,7 @@ public class CareerPromotion {
 		 
 	 }
 	@When("^I click on Promotions icon$")
-	public void i_click_on_Promotions_icon() throws Throwable {
+	public void I_click_on_Promotions_icon() throws Throwable {
 		driver.findElement(By.xpath("//*[@id=\"toolbar-career\"]/div/div/a[3]/img")).click();
 		////a[3]//img[1]
 	}
